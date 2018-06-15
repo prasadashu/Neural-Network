@@ -39,6 +39,7 @@ for j in range(60000):
 	syn0 += learning_rate * (np.dot(l0.T, l1_delta))
 	syn1 += learning_rate * (np.dot(l1.T, l2_delta))
 
+#Changes are to be made here to improve the efficiency
 def model(X):
 	for i in range(len(X)):
 		if X[i, 0] > 9.99999000e-01:
