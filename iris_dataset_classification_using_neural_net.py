@@ -15,6 +15,7 @@ X_test = (X_test - np.mean(X_test)) / (np.max(X_test) - np.min(X_test))
 y_test = y_test.reshape(60, 1)
 y_train = y_train.reshape(90, 1)
 
+np.random.seed(1)
 syn0 = np.random.random((4, 3))
 syn1 = np.random.random((3, 1))
 
